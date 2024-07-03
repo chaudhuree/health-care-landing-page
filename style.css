@@ -1,0 +1,90 @@
+/* variables */
+:root {
+  --primary-color: #020043;
+  --primary-color-light: #343268;
+  --accent-color: #ffc637;
+}
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /*Ten pixel */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/* Global styles */
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--primary-color);
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+/* grid system */
+/* Grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px; /* Adjust gap as needed */
+  width: 100%;
+  margin: 0 auto; /* Center the grid container */
+}
+.gap-20 {
+  gap: 2rem;
+}
+.gap-24 {
+  gap: 2.4rem;
+}
+.gap-28 {
+  gap: 2.8rem;
+}
+/* Grid item span */
+.col-span-4 {
+  grid-column: span 4;
+}
+.col-span-6 {
+  grid-column: span 6;
+}
+.col-span-12 {
+  grid-column: span 12;
+}
+
+/*  container styles  */
+.container {
+  width: 80.56%;
+  margin: 0 auto;
+}
+
+/* default button */
+.button {
+  font-weight: 500;
+  line-height: 116.9%;
+  padding: 1.5rem 2.8rem;
+  background-color: transparent;
+  border: 1px solid var(--primary-color-light);
+  border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+
+  &.button--primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    &:hover {
+      background-color: transparent;
+      color: var(--primary-color);
+      border-color: var(--primary-color-light);
+    }
+  }
+}
