@@ -26,6 +26,11 @@ body {
   overflow-x: hidden;
   background: #fbfbfb;
 }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 /* grid system */
 /* Grid container */
 .grid-container {
@@ -662,8 +667,8 @@ radial-gradient(648.07% 142.88% at 98.23% 78.35%, #020043 0%, rgba(2, 0, 67, 0.3
   justify-content: space-between;
   height: 100%;
 }
-.cta__desc{
-  flex:2
+.cta__desc {
+  flex: 2;
 }
 .cta__logo {
   flex: 1;
@@ -681,27 +686,27 @@ radial-gradient(648.07% 142.88% at 98.23% 78.35%, #020043 0%, rgba(2, 0, 67, 0.3
   gap: 2.2rem;
   margin-top: 24px;
 }
-.cta--button{
+.cta--button {
   border-color: #fbfbfb;
   color: #fffff5;
 }
-.cta--button img{
+.cta--button img {
   fill: #fffff5;
 }
 .button--white:hover {
   background-color: #fffff5 !important;
 }
-.cta__logo{
+.cta__logo {
   text-align: right;
   align-self: flex-start;
   padding: 60px;
 }
 
 @media screen and (max-width: 767px) {
-  .cta__logo{
+  .cta__logo {
     display: none;
   }
-  .cta__desc{
+  .cta__desc {
     width: 100%;
   }
   .cta__desc h1 {
@@ -715,8 +720,76 @@ radial-gradient(648.07% 142.88% at 98.23% 78.35%, #020043 0%, rgba(2, 0, 67, 0.3
     gap: 1rem;
     margin-top: 12px;
   }
-  .button__group{
+  .button__group {
     flex-direction: column;
     width: 70%;
   }
+}
+
+/* footer section */
+footer {
+  background-color: #020043;
+  padding: 120px 0;
+  color: #fffff5;
+}
+.footer__section {
+  margin-top: 3.3rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-self: flex-start;
+}
+.website{
+  width: 297px;
+  padding: 0 20px 0 0;
+}
+.second__footer__part{
+  flex:1;
+  display: flex;
+  justify-content: space-between;
+}
+.menuone,
+.menutwo,
+.social {
+  width: 32%;
+}
+.website{
+  margin-top: 10px;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+.website p{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+
+.menuone ul,.menutwo ul,.social ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  line-height: 36.96px;
+}
+@media screen and (max-width: 992px){
+  .social img{
+    display: none;
+  
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__section{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+ .menutwo,.social{
+   display: none;
+ }
 }
