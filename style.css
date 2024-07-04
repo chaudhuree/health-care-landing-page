@@ -24,7 +24,7 @@ body {
   color: var(--primary-color);
   font-weight: 400;
   overflow-x: hidden;
-  background: #FBFBFB;
+  background: #fbfbfb;
 }
 /* grid system */
 /* Grid container */
@@ -422,7 +422,6 @@ body {
 .about__fig img {
   width: 100%;
   object-fit: cover;
-
 }
 
 .about__fig .poster__text {
@@ -476,7 +475,7 @@ body {
     line-height: 18px; /* 150% */
   }
 }
-@media  screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .about__fig .poster__text {
     padding: 1rem;
     gap: 1rem;
@@ -491,12 +490,11 @@ body {
   .about__fig .poster__text p {
     font-size: 10px;
   }
-  
 }
 
 /* services section */
 
-.services__box{
+.services__box {
   padding: 40px;
   border-radius: 3.2rem;
   background-color: #fffff5;
@@ -526,7 +524,7 @@ body {
   color: var(--primary-color);
   font-size: 36px;
   font-weight: 600;
-  line-height: 54px; 
+  line-height: 54px;
   width: 90%;
 }
 
@@ -535,7 +533,7 @@ body {
   color: var(--primary-color-light);
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px; 
+  line-height: 24px;
 }
 .services__button {
   margin-top: 4rem;
@@ -550,7 +548,6 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 30px;
-
 }
 
 .services__fig .poster__text {
@@ -566,7 +563,6 @@ body {
   background-color: rgba(2, 0, 67, 0.6);
   border-radius: 3.2rem;
   width: 395px;
-  
 }
 .services__fig .poster__text h1 {
   color: #fff;
@@ -578,12 +574,12 @@ body {
   color: rgba(255, 255, 255, 0.8);
   font-size: 12px;
   font-weight: 400;
-  line-height: 18px; 
+  line-height: 18px;
   display: flex;
   align-items: center;
   gap: 1.8rem;
 }
-.services__fig .poster__text p span img{
+.services__fig .poster__text p span img {
   padding-top: 21px;
   z-index: 10;
 }
@@ -612,9 +608,9 @@ body {
     line-height: 18px; /* 150% */
   }
 }
-@media  screen and (max-width: 600px) {
-  .services__box{
-    padding:8px;
+@media screen and (max-width: 600px) {
+  .services__box {
+    padding: 8px;
   }
   .services__fig .poster__text {
     padding: 1rem;
@@ -630,7 +626,6 @@ body {
   .services__fig .poster__text p {
     font-size: 10px;
   }
-  
 }
 @media (min-width: 993px) and (max-width: 1200px) {
   .services__fig .poster__text {
@@ -639,8 +634,89 @@ body {
     left: 15px;
     border-radius: 16px;
     width: 320px;
+  }
 }
-}
-.services__row.second_row{
+.services__row.second_row {
   margin-top: 6rem;
+}
+
+/* CTA section */
+/* .hero__wrapper {
+  background: url("assets/images/headerbg.svg") no-repeat center center/cover;
+radial-gradient(648.07% 142.88% at 98.23% 78.35%, #020043 0%, rgba(2, 0, 67, 0.30) 100%)
+  margin-top: 4rem;
+} */
+.cta__section {
+  height: 470px;
+  background: radial-gradient(151% 236%at 0% 91%, #020043, rgba(2, 0, 67, -0.7)),
+    url("assets/images/CTA.jpeg") center no-repeat;
+  background-size: cover;
+  border-radius: 4.8rem;
+  border: 1px solid #000;
+  transform: translateY(-4rem);
+  overflow-y: hidden;
+}
+.cta__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.cta__desc{
+  flex:2
+}
+.cta__logo {
+  flex: 1;
+}
+.cta__desc h1 {
+  color: #fffff5;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+  padding: 0 60px;
+}
+.button__group {
+  padding: 0 60px;
+  display: flex;
+  gap: 2.2rem;
+  margin-top: 24px;
+}
+.cta--button{
+  border-color: #fbfbfb;
+  color: #fffff5;
+}
+.cta--button img{
+  fill: #fffff5;
+}
+.button--white:hover {
+  background-color: #fffff5 !important;
+}
+.cta__logo{
+  text-align: right;
+  align-self: flex-start;
+  padding: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .cta__logo{
+    display: none;
+  }
+  .cta__desc{
+    width: 100%;
+  }
+  .cta__desc h1 {
+    font-size: 32px;
+    font-weight: 600;
+    padding: 0 20px;
+  }
+  .button__group {
+    padding: 0 20px;
+    display: flex;
+    gap: 1rem;
+    margin-top: 12px;
+  }
+  .button__group{
+    flex-direction: column;
+    width: 70%;
+  }
 }
