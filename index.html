@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOC+</title>
+    <!-- favicon -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,14 +15,16 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
-  <body>
+  <div>
     <!-- header section -->
-    <header class="container">
-      <nav>
-        <div class="logo">
-          <img src="assets/images/logo.svg" alt="logo" />
-        </div>
-        
+    <header class="header__section">
+      <div class="container">
+        <!-- navbar -->
+        <nav>
+          <div class="logo">
+            <img src="assets/images/logo.svg" alt="logo" />
+          </div>
+
           <ul>
             <li>
               <a class="link" href="#">Home</a>
@@ -41,25 +44,97 @@
             <span class="line"></span>
             <span class="line"></span>
           </div>
-          <button class="button nav__button">Appointment <img src="assets/icons/arrowrightup.svg" alt="arrowrightup"></button>
-       
-      </nav>
-      <div class="menubar">
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Blog</a>
-          </li>
-          <li>
-            <a href="#">About Us</a>
-          </li>
-        </ul>
+          <button class="button nav__button">
+            Appointment
+            <img src="assets/icons/arrowrightup.svg" alt="arrowrightup" />
+          </button>
+        </nav>
+        <!-- mobile nav -->
+        <div class="menubar">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- hero section -->
+      <div class="hero__wrapper">
+        <div class="container hero__section"></div>
       </div>
     </header>
+
+    <!-- stats section -->
+     <div class="stat__container__wrapper">
+    <div class="container stat__container">
+      <div class="left__stat">
+        <div class="satisfaction__rate">
+          <h2>90%</h2>
+          <p>Patient satisfaction rate, reflecting our commitment.</p>
+        </div>
+        <figure class="chart">
+          <img src="assets/images/chart.svg" alt="chart" loading="lazy"/>
+        </figure>
+      </div>
+      <div class="center__stat">
+        <div class="card__title">
+          
+            <h1 >Comprehensive Care for Every Patient</h1>
+          
+        </div>
+        <div class="card__satisfaction__rate">
+          <div class="certification">
+            <h1>500+</h1>
+            <div class="doctors-benefit">
+              <div class="board-certified-doctors">
+                Board-certified doctors
+              </div>
+              <img class="certificate__icon" loading="lazy" alt="" src="assets/images/certificate.svg">
+            </div>
+          </div>
+          <div class="rating">
+            <div class="rating__box">
+              <div class="rating__number"><span>4.8</span> <img src="assets/icons/star.svg" alt=""></div>
+              <p class="rating__description">Over 20,000 Patient</p>
+            </div>
+            <div class="users__list">
+              <img src="assets/images/groupOfPeople.png" alt="users" />
+            </div>
+          </div>
+          <div class="certification">
+            <h1>$5000</h1>
+            <div class="doctors-benefit">
+              <div class="board-certified-doctors">
+                Money spend for poor patient
+              </div>
+              <img class="certificate__icon" loading="lazy" alt="" src="assets/images/coins.svg">
+            </div>
+          </div>
+        </div>
+       
+      </div>
+      <div class="left__stat right__stat">
+        <div class="satisfaction__rate">
+          <h2>50+</h2>
+          <p>Free lession video
+            for patient</p>
+        </div>
+        <figure class="chart">
+          <img src="assets/images/video.svg" alt="chart" loading="lazy"/>
+        </figure>
+      </div>
+    </div>
+    
+  </div>
   </body>
 </html>
