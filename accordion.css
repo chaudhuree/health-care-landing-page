@@ -55,12 +55,15 @@ input {
   color: #343268;
   font-size: 14px;
   line-height: 2.4rem;
-  border-top: 1px solid #4D4C7B;
+  padding:1.6rem 10.3rem 1.6rem 4.3rem;
 
 }
 input:checked + .accordion-label::after {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
+}
+input:checked ~ .accordion-label {
+  border-bottom: 1px solid #4D4C7B;
 }
 input:checked ~ .accordion-content {
   max-height: 100vh;

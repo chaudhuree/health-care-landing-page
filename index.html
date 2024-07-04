@@ -11,19 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="assets/vendors/css/owl.carousel.css" />
+    <link rel="stylesheet" href="assets/vendors/css/owl.theme.css" />
     <link rel="stylesheet" href="accordion.css" />
     <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="assets/vendors/css/animate.css">
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
     <div>
       <!-- header section -->
-      <header class="header__section">
+      <header class="header__section ">
         <div class="container">
           <!-- navbar -->
           <nav>
@@ -50,7 +49,7 @@
               <span class="line"></span>
               <span class="line"></span>
             </div>
-            <button class="button nav__button">
+            <button class="button nav__button animate__animated animate__fadeInRight">
               Appointment
               <img src="assets/icons/arrowrightup.svg" alt="arrowrightup" />
             </button>
@@ -90,7 +89,7 @@
                 <p>Patient satisfaction rate, reflecting our commitment.</p>
               </div>
               <figure class="chart">
-                <img src="assets/images/chart.svg" alt="chart" loading="lazy" />
+                <img  src="assets/images/chart.svg" alt="chart" loading="lazy" />
               </figure>
             </div>
             <div class="center__stat">
@@ -294,108 +293,366 @@
 
             <!-- slider container -->
             <div class="slider__container">
-              <swiper-container
-                class="mySwiper"
-                pagination="true"
-                pagination-clickable="true"
-                space-between="24"
-                slides-per-view="3"
+              <!-- owl slider -->
+              <div
+                class="owl-carousel work-areas text-center top_120 bottom_90 col-md-10 offset-md-1"
+                data-pagination="true"
+                data-autoplay="3000"
+                data-items-desktop="3"
+                data-items-desktop-small="3"
+                data-items-tablet="2"
+                data-items-tablet-small="1"
               >
-                <swiper-slide>
+                <!-- an area -->
+                <div class="slidersingleitem">
                   <div class="slider__card">
                     <h1>Expertise and Compassion Combined</h1>
-                    <p>I can't thank enough for their exceptional care. The doctors and staff showed incredible expertise and compassion throughout my treatment journey. I felt truly cared for every step of the way.</p>
+                    <p>
+                      I can't thank enough for their exceptional care. The
+                      doctors and staff showed incredible expertise and
+                      compassion throughout my treatment journey. I felt truly
+                      cared for every step of the way.
+                    </p>
                     <div class="author">
-                      <img src="assets/images/user.png" alt="user">
+                      <img src="assets/images/user.png" alt="user" />
                       <div class="designation">
                         <p><span>Sarah D, </span>IT Professional</p>
                         <div class="starticons">
-                          <img src="assets/images/staricon.svg" alt="star icon">
-                          <img src="assets/images/staricon.svg" alt="star icon">
-                          <img src="assets/images/staricon.svg" alt="star icon">
-                          <img src="assets/images/staricon.svg" alt="star icon">
-                          <img src="assets/images/staricon.svg" alt="star icon">
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
                         </div>
                       </div>
                     </div>
                   </div>
-                </swiper-slide>
-                <swiper-slide>
+                </div>
+                <!-- an area -->
+                <div class="slidersingleitem">
                   <div class="slider__card">
-                    <h1>Life-Saving Care, Life-Changing Experience</h1>
-                    <p>My experience at [Healthcare Provider Name] was life-changing. The prompt and accurate diagnosis, coupled with the advanced treatments they provided, saved my life.</p>
+                    <h1>Expertise and Compassion Combined</h1>
+                    <p>
+                      I can't thank enough for their exceptional care. The
+                      doctors and staff showed incredible expertise and
+                      compassion throughout my treatment journey. I felt truly
+                      cared for every step of the way.
+                    </p>
                     <div class="author">
-                      <img src="assets/images/usertwo.png" alt="user">
+                      <img src="assets/images/usertwo.png" alt="user" />
                       <div class="designation">
                         <p><span>Michael R, </span>Business Executive</p>
                         <div class="starticons">
-                          <img src="assets/images/staricon.svg" alt="">
-                          <img src="assets/images/staricon.svg" alt="">
-                          <img src="assets/images/staricon.svg" alt="">
-                          <img src="assets/images/staricon.svg" alt="">
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
                         </div>
                       </div>
                     </div>
                   </div>
-                </swiper-slide>
-                <swiper-slide>
+                </div>
+                <!-- an area -->
+                <div class="slidersingleitem">
                   <div class="slider__card">
-                    <h1>A Partner in Health and
-                      Wellness</h1>
-                    <p>As a busy professional, I appreciate the convenience and quality of care I receive at [Healthcare Provider Name]. From telemedicine consultations to routine check-ups, they've become my trusted partner in health and</p>
+                    <h1>Expertise and Compassion Combined</h1>
+                    <p>
+                      I can't thank enough for their exceptional care. The
+                      doctors and staff showed incredible expertise and
+                      compassion throughout my treatment journey. I felt truly
+                      cared for every step of the way.
+                    </p>
                     <div class="author">
-                      <img src="assets/images/usertheree.png" alt="user">
+                      <img src="assets/images/usertheree.png" alt="user" />
                       <div class="designation">
                         <p><span>David S, </span>Lawyer</p>
                         <div class="starticons">
-                          <img src="assets/images/staricon.svg" alt="">
-                          <img src="assets/images/staricon.svg" alt="">
-                          <img src="assets/images/staricon.svg" alt="">
-                          <img src="assets/images/staricon.svg" alt="">
-                          <img src="assets/images/staricon.svg" alt="">
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
                         </div>
                       </div>
                     </div>
                   </div>
-                </swiper-slide>
-                <swiper-slide>
+                </div>
+                <!-- an area -->
+                <div class="slidersingleitem">
                   <div class="slider__card">
                     <h1>Expertise and Compassion Combined</h1>
-                    <p>I can't thank enough for their exceptional care. The doctors and staff showed incredible expertise and compassion throughout my treatment journey. I felt truly cared for every step of the way.</p>
+                    <p>
+                      I can't thank enough for their exceptional care. The
+                      doctors and staff showed incredible expertise and
+                      compassion throughout my treatment journey. I felt truly
+                      cared for every step of the way.
+                    </p>
                     <div class="author">
-                      <img src="assets/images/user.png" alt="user">
+                      <img src="assets/images/user.png" alt="user" />
                       <div class="designation">
                         <p><span>Sarah D, </span>IT Professional</p>
                         <div class="starticons">
-                          <img src="assets/images/staricon.svg" alt="star icon">
-                          <img src="assets/images/staricon.svg" alt="star icon">
-                          <img src="assets/images/staricon.svg" alt="star icon">
-                          <img src="assets/images/staricon.svg" alt="star icon">
-                          <img src="assets/images/staricon.svg" alt="star icon">
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
                         </div>
                       </div>
                     </div>
                   </div>
-                </swiper-slide>
-                <swiper-slide>
+                </div>
+                <!-- an area -->
+                <div class="slidersingleitem">
                   <div class="slider__card">
-                    <h1>Life-Saving Care, Life-Changing Experience</h1>
-                    <p>My experience at [Healthcare Provider Name] was life-changing. The prompt and accurate diagnosis, coupled with the advanced treatments they provided, saved my life.</p>
+                    <h1>Expertise and Compassion Combined</h1>
+                    <p>
+                      I can't thank enough for their exceptional care. The
+                      doctors and staff showed incredible expertise and
+                      compassion throughout my treatment journey. I felt truly
+                      cared for every step of the way.
+                    </p>
                     <div class="author">
-                      <img src="assets/images/usertwo.png" alt="user">
+                      <img src="assets/images/usertwo.png" alt="user" />
                       <div class="designation">
                         <p><span>Michael R, </span>Business Executive</p>
                         <div class="starticons">
-                          <img src="assets/images/staricon.svg" alt="">
-                          <img src="assets/images/staricon.svg" alt="">
-                          <img src="assets/images/staricon.svg" alt="">
-                          <img src="assets/images/staricon.svg" alt="">
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
                         </div>
                       </div>
                     </div>
                   </div>
-                </swiper-slide>
-              </swiper-container>
+                </div>
+                <!-- an area -->
+                <div class="slidersingleitem">
+                  <div class="slider__card">
+                    <h1>Expertise and Compassion Combined</h1>
+                    <p>
+                      I can't thank enough for their exceptional care. The
+                      doctors and staff showed incredible expertise and
+                      compassion throughout my treatment journey. I felt truly
+                      cared for every step of the way.
+                    </p>
+                    <div class="author">
+                      <img src="assets/images/usertheree.png" alt="user" />
+                      <div class="designation">
+                        <p><span>David S, </span>Lawyer</p>
+                        <div class="starticons">
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- an area -->
+                <div class="slidersingleitem">
+                  <div class="slider__card">
+                    <h1>Expertise and Compassion Combined</h1>
+                    <p>
+                      I can't thank enough for their exceptional care. The
+                      doctors and staff showed incredible expertise and
+                      compassion throughout my treatment journey. I felt truly
+                      cared for every step of the way.
+                    </p>
+                    <div class="author">
+                      <img src="assets/images/user.png" alt="user" />
+                      <div class="designation">
+                        <p><span>Sarah D, </span>IT Professional</p>
+                        <div class="starticons">
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- an area -->
+                <div class="slidersingleitem">
+                  <div class="slider__card">
+                    <h1>Expertise and Compassion Combined</h1>
+                    <p>
+                      I can't thank enough for their exceptional care. The
+                      doctors and staff showed incredible expertise and
+                      compassion throughout my treatment journey. I felt truly
+                      cared for every step of the way.
+                    </p>
+                    <div class="author">
+                      <img src="assets/images/usertwo.png" alt="user" />
+                      <div class="designation">
+                        <p><span>Michael R, </span>Business Executive</p>
+                        <div class="starticons">
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- an area -->
+                <div class="slidersingleitem">
+                  <div class="slider__card">
+                    <h1>Expertise and Compassion Combined</h1>
+                    <p>
+                      I can't thank enough for their exceptional care. The
+                      doctors and staff showed incredible expertise and
+                      compassion throughout my treatment journey. I felt truly
+                      cared for every step of the way.
+                    </p>
+                    <div class="author">
+                      <img src="assets/images/usertheree.png" alt="user" />
+                      <div class="designation">
+                        <p><span>David S, </span>Lawyer</p>
+                        <div class="starticons">
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                          <img
+                            src="assets/images/staricon.svg"
+                            alt="star icon"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of owl carousel -->
             </div>
           </div>
         </div>
@@ -501,6 +758,7 @@
           </div>
         </div>
       </main>
+
       <footer>
         <div class="container">
           <img src="assets/images/logoWhite.svg" alt="logo" />
@@ -547,16 +805,7 @@
         </div>
       </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
+    <script src="assets/vendors/js/jquery.js"></script>
+    <script src="assets/vendors/js/owl.carousel.min.js"></script>
   </body>
 </html>
