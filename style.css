@@ -739,12 +739,12 @@ footer {
   justify-content: space-between;
   align-self: flex-start;
 }
-.website{
+.website {
   width: 297px;
   padding: 0 20px 0 0;
 }
-.second__footer__part{
-  flex:1;
+.second__footer__part {
+  flex: 1;
   display: flex;
   justify-content: space-between;
 }
@@ -753,19 +753,21 @@ footer {
 .social {
   width: 32%;
 }
-.website{
+.website {
   margin-top: 10px;
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
 }
-.website p{
+.website p {
   display: flex;
   flex-direction: column;
-  gap:2rem;
+  gap: 2rem;
 }
 
-.menuone ul,.menutwo ul,.social ul{
+.menuone ul,
+.menutwo ul,
+.social ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -774,22 +776,32 @@ footer {
   text-transform: capitalize;
   line-height: 36.96px;
 }
-@media screen and (max-width: 992px){
-  .social img{
+@media screen and (max-width: 992px) {
+  .social img {
     display: none;
-  
   }
 }
 @media screen and (max-width: 767px) {
-  .footer__section{
+  .footer__section {
     flex-direction: column;
     gap: 2rem;
   }
-  
 }
 
 @media screen and (max-width: 600px) {
- .menutwo,.social{
-   display: none;
- }
+  .menutwo,
+  .social {
+    display: none;
+  }
+}
+
+
+/* FAQ section   */
+.faq__header{
+  color: var(--primary-color);
+font-size: 36px;
+font-weight: 600;
+line-height: 54px; 
+margin-top: 1.6rem;
+margin-bottom: 3rem;
 }
